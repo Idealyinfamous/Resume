@@ -1,9 +1,45 @@
 body {
-  background: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  /*background: linear-gradient(to top, #a3bded 0%, #6991c7 100%;
   width: 100%;
-  height: 2000px;
+  height: 2000px;*/
+  transition: 0.3s;
 }
-h1 {
+.switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #2a2831;
+  position: relative;
+}
+.flick {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #4e4376;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  box-shadow: inset 4px 4px 4px #6991c7, inset -4px -4px 4px #92d9fa;
+}
+.dark {
+  background-color: rgb(31, 41, 130);
+  transition: 0.3s;
+}
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 #ffd900;
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+.dark .flick {
+  transform: translateX(40px);
+}
+/*h1 *{
   margin: auto;
   display: center;
   width: 75%;
@@ -19,4 +55,4 @@ img {
 }
 .navbar {
   background-color: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-}
+}*/
