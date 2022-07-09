@@ -1,18 +1,27 @@
 body {
   transition: 0.3s;
+  margin: 0;
+  padding: 0;
 }
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
 .switch {
   width: 80px;
   height: 40px;
   border-radius: 20px;
-  background-color: #2a2831;
+  background-color: #ffffff;
   position: relative;
 }
 .flicker {
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  background-color: #4e4376;
+  background-color: #7e6bc6;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -20,7 +29,7 @@ body {
   box-shadow: inset 4px 4px 4px #6991c7, inset -4px -4px 4px #92d9fa;
 }
 .dark {
-  background-color: rgb(31, 41, 130);
+  background-color: rgb(69, 58, 77);
   transition: 0.3s;
 }
 .moon {
@@ -33,6 +42,26 @@ body {
   left: 45px;
 }
 
-.dark .flick {
+.dark .flicker {
   transform: translateX(40px);
+}
+
+.dark > * {
+  color: white;
+}
+
+.hero-main {
+  height: 80vh;
+}
+.hero-text {
+  width: 50%;
+  padding: 30px;
+}
+
+.square {
+  width: 98%;
+  margin: 1%;
+  height: 350px;
+  text-align: center;
+  background-color: rgb(221, 9, 150);
 }
