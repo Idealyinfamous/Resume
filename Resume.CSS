@@ -1,7 +1,4 @@
 body {
-  /*background: linear-gradient(to top, #a3bded 0%, #6991c7 100%;
-  width: 100%;
-  height: 2000px;*/
   transition: 0.3s;
 }
 .switch {
@@ -11,7 +8,7 @@ body {
   background-color: #2a2831;
   position: relative;
 }
-.flick {
+.flicker {
   width: 30px;
   height: 30px;
   border-radius: 15px;
@@ -39,20 +36,3 @@ body {
 .dark .flick {
   transform: translateX(40px);
 }
-/*h1 *{
-  margin: auto;
-  display: center;
-  width: 75%;
-  border: #4e4376;
-  padding: 10px;
-  font-style: italic;
-  color: rgb(28, 180, 129);
-}
-
-img {
-  display: left;
-  padding: 0 50% 0 50%;
-}
-.navbar {
-  background-color: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-}*/
