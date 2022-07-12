@@ -1,15 +1,71 @@
+/* ~Source Sans 3 ~*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;1,300;1,900&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap");
+/* ~Text Me One Font ~*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;1,300;1,900&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap");
+/*Bad Script*/
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Source+Sans+3:ital,wght@0,300;1,300;1,900&display=swap");
 body {
   transition: 0.3s;
   margin: 0;
   padding: 0;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(220, 217, 249) 0%,
+    rgb(172, 224, 217) 89.8%
+  );
+  font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+  font-family: "Bad Script", cursive;
+  font-weight: 300;
+  margin: 40px 0 40px 0;
+}
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 50px 0 10px 0;
+}
+p {
+  margin: 0;
+  font-size: 20px;
+}
+a {
+  color: rgb(220, 47, 255);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+}
+.dark a {
+  color: #ffd900;
 }
 
 header {
   display: flex;
   justify-content: flex-end;
   padding: 0;
+  margin: 50px;
+  font-family: "Work Sans", sans-serif;
 }
 
+.iroh {
+  font-family: "Text Me One", sans-serif;
+}
+.cite {
+  text-decoration-line: underline;
+}
+
+/*.navigation {
+  display: flexbox;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  height: 5px;
+}*/
+/*Background of lightDark button*/
 .switch {
   width: 80px;
   height: 40px;
@@ -17,10 +73,11 @@ header {
   background-color: #ffffff;
   position: relative;
 }
+/*Toggle*/
 .flicker {
   width: 30px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #7e6bc6;
   position: absolute;
   top: 5px;
@@ -29,7 +86,7 @@ header {
   box-shadow: inset 4px 4px 4px #6991c7, inset -4px -4px 4px #92d9fa;
 }
 .dark {
-  background-color: rgb(69, 58, 77);
+  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   transition: 0.3s;
 }
 .moon {
@@ -63,5 +120,32 @@ header {
   margin: 1%;
   height: 350px;
   text-align: center;
-  background-color: rgb(221, 9, 150);
+  background-color: #ffffff;
+}
+
+.dark .square {
+  background-color: #7e6bc6;
+}
+
+.dub-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 100px 30px;
+  background-color: #6991c7;
+}
+.dark footer {
+  background-color: #1e5eb2;
+}
+
+@media only screen and (min-width: 970px) {
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
 }

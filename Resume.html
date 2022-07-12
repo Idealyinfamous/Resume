@@ -5,70 +5,96 @@
     <title>Jessica Perry: Web Developer & Chef</title>
     <link rel="stylesheet" href="Resume.CSS" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
+    <!--CAN'T USE BOOTSTRAP WITH GRADIENTS~
+      <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
-    />
+    />-->
   </head>
   <body>
     <header>
-      <img src="..." class="Headshot" alt="Jessica-Perry" />
       <!--~~~~~Light/dark mode~~~~-->
       <div class="switch">
         <div class="flicker"></div>
         <div class="moon"></div>
       </div>
-      <!------~~~~~Navigation~~~-->
-      <nav class="navbar">
-        <!-- Navbar color not working, need to figure out when working in CSS -->
-        <!-- Navbar content -->
-        <ul>
-          <button><a href="">Introduction</a></button>
-          <button><a href="">Career Journey</a></button>
-          <button><a href="">Projects</a></button>
-          <button><a href="">Testimonials</a></button>
-          <button><a href="">Connect</a></button>
-        </ul>
-      </nav>
+      <!------~~~~~Navigation~~~
+      <<div class="navigation">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <div class="text-white h4"><a href="">Introduction</a></div>
+            <div><a href="">Career Journey</a></div>
+            <div><a href="">Projects</a></div>
+            <div><a href="">Testimonials</a></div>
+            <div><a href="">Connect</a></div>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>>-->
+      <!--~~~Hero banner-->
     </header>
+    <img src="..." class="Headshot" alt="Jessica-Perry" />
     <section class="hero-main">
       <!--Div with hero text-->
       <figure class="hero-text">
         <h1>Jessica Perry</h1>
         <blockquote>
-          <quote>"Failure is only the opportunity to begin again..."</quote>
+          <quote class="iroh"
+            >"Failure is only the opportunity to begin again..."</quote
+          >
           <br />
-          <figcaption>
-            -Uncle Iroh, <cite> Avatar: Last Airbender </cite>
+          <figcaption class="uncle">
+            -Uncle Iroh, <cite class="cite"> Avatar: Last Airbender </cite>
           </figcaption>
         </blockquote>
       </figure>
       <br />
-      <a src="">Let's connect</a>
+      <a href="#footer">Let's connect</a>
       <!--</div>-->
+      <!--~~~~~~Projects~~~~~~~~-->
     </section>
     <section class="dub-section">
-      <div class="'square">
+      <div class="square">
         <h2>Eggcellent</h2>
         <p>Informational landing page featured for kids</p>
         <br />
         <a href="">Check it out</a>
+        <img class="egg" src="Images/eggcellent-project.png" alt="Eggcellent" />
       </div>
-      <div class="'square">
+      <div class="square" id="pirate">
         <h2>Treasure Hunt Adventure Game</h2>
         <p>choice your path adventure game</p>
         <br />
         <a href="">Check it out</a>
       </div>
-      <div class="'square">
+      <div class="square" id="user">
         <h2>Username Generator</h2>
         <p>get creative in your username with this simple tool</p>
         <br />
         <a href="">Check it out</a>
       </div>
+      <div class="square">
+        <h2>More coming soon!</h2>
+        <p>More projects are in process</p>
+        <br />
+        <a href="">Check it out</a>
+      </div>
     </section>
+    <!--~~~~~~~~~~~~~~~-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -76,4 +102,7 @@
     ></script>
     <script src="Resume.JS"></script>
   </body>
+  <footer id="footer">
+    <p>this is an email address</p>
+  </footer>
 </html>
