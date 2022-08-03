@@ -16,6 +16,13 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+.Headshot {
+  width: 240px;
+  height: 330px;
+  border-radius: 200px;
+  position: relative;
+}
+
 h1 {
   font-size: 80px;
   line-height: 80px;
@@ -39,8 +46,14 @@ a {
   text-decoration: none;
   font-weight: 400;
 }
+button {
+  background-color: #92d9fa;
+}
 .dark a {
   color: #ffd900;
+}
+.dark button {
+  background-color: #4e4376;
 }
 
 header {
@@ -113,6 +126,7 @@ header {
 .hero-text {
   width: 50%;
   padding: 30px;
+  position: relative;
 }
 
 .square {
@@ -125,6 +139,23 @@ header {
 
 .dark .square {
   background-color: #7e6bc6;
+}
+
+#egg {
+  background-image: url("Images/Chicken.BG.jpg");
+  background-size: cover;
+}
+#pirate {
+  background-image: url("Images/map.jpg");
+  background-size: cover;
+}
+#user {
+  background-image: url("Images/keyboard.jpg");
+  background-size: cover;
+}
+#soon {
+  background-image: url("Images/comingSoon.jpg");
+  background-size: cover;
 }
 
 .dub-section {
