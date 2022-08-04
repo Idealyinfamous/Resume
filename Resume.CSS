@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;1,300;1,900&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap");
 /*Bad Script*/
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Source+Sans+3:ital,wght@0,300;1,300;1,900&display=swap");
+/* ~Ruda~ */
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap");
 body {
   transition: 0.3s;
   margin: 0;
@@ -15,12 +17,10 @@ body {
   );
   font-family: "Source Sans 3", sans-serif;
 }
-
 .Headshot {
   width: 240px;
   height: 330px;
   border-radius: 200px;
-  position: relative;
 }
 
 h1 {
@@ -124,9 +124,10 @@ header {
   height: 80vh;
 }
 .hero-text {
-  width: 50%;
+  width: auto;
+  height: auto;
+  margin-right: 10px;
   padding: 30px;
-  position: relative;
 }
 
 .square {
@@ -142,12 +143,14 @@ header {
 }
 
 #egg {
-  background-image: url("Images/Chicken.BG.jpg");
+  background-image: url("Images/girlyEgg.jpg");
   background-size: cover;
+  background-position: center;
 }
 #pirate {
-  background-image: url("Images/map.jpg");
+  background-image: url("Images/pirate.jpg");
   background-size: cover;
+  background-position: center;
 }
 #user {
   background-image: url("Images/keyboard.jpg");
@@ -156,6 +159,30 @@ header {
 #soon {
   background-image: url("Images/comingSoon.jpg");
   background-size: cover;
+}
+
+#egg:hover {
+  color: #2b5876;
+  background: rgb(171, 116, 199);
+}
+#pirate:hover {
+  color: #2b5876;
+  background: rgb(171, 116, 199);
+}
+#user:hover {
+  color: #2b5876;
+  background: rgb(171, 116, 199);
+}
+button {
+  background-color: #ababd5;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+.button:active {
+  background-color: #ffbf00;
 }
 
 .dub-section {
@@ -174,9 +201,16 @@ footer {
 }
 
 @media only screen and (min-width: 970px) {
+  .hero-text {
+    width: 50px;
+  }
   .square {
     width: 48%;
     margin: 1%;
     height: 600px;
+    border-radius: 40px;
+    color: rgb(252, 158, 8);
+    font-weight: bolder;
+    font-family: "Ruda", sans-serif;
   }
 }
