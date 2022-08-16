@@ -145,7 +145,42 @@ header {
 .dark > * {
   color: white;
 }
+/*Carousel slide show*/
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  border: 5px solid purple;
+  overflow: hidden;
+  position: relative;
+}
 
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+#prevbtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: #ffff00ba;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#nextbtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: #ffd000ba;
+  opacity: 0.5;
+  cursor: pointer;
+}
+/*Project squares*/
 .hero-main {
   height: 15vh;
 }
@@ -157,9 +192,9 @@ header {
 }
 
 .square {
-  width: 98%;
+  width: 50%;
   margin: 1%;
-  height: 350px;
+  height: 200px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -223,7 +258,8 @@ button:hover {
   background-color: transparent;
   color: rgb(167, 0, 227);
   border: 2px solid rgb(111, 0, 255);
-  box-shadow: 3px 3px 3px rgb(143, 201, 222), 3px 3px 3px rgb(220, 217, 249);
+  box-shadow: 3px 3px 3px hsla(196, 54%, 72%, 0.716),
+    3px 3px 3px rgb(220, 217, 249);
   border-radius: 8px;
   margin: 10px;
   padding: 12px;
@@ -231,9 +267,10 @@ button:hover {
 #connect:hover {
   color: rgb(167, 0, 227);
   transition: all 0.3s ease-in-out 0s;
-  background-color: rgb(138, 150, 221);
+  background-color: rgba(138, 150, 221, 0.639);
   border: 2px solid rgb(111, 0, 255);
-  box-shadow: 3px 3px 3px rgb(143, 201, 222), 3px 3px 3px rgb(220, 217, 249);
+  box-shadow: 3px 3px 3px hsla(196, 54%, 72%, 0.702),
+    3px 3px 3px rgb(220, 217, 249);
   border-radius: 8px;
   margin: 10px;
   padding: 12px;
@@ -249,13 +286,13 @@ button:hover {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  row-gap: 10px;
   padding: 100px 30px;
-  background-color: #6991c7;
+  background-color: hsla(256, 65%, 63%, 0.421);
 }
 .dark footer {
-  background-color: #1e5eb2;
+  background-color: hsla(259, 71%, 41%, 0.333);
 }
 
 @media only screen and (min-width: 970px) {
