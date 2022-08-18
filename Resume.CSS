@@ -39,6 +39,24 @@ h1 {
   text-decoration: underline;
   margin: 40px 0 40px 0;
 }
+
+#frontpage {
+  color: #ffd000;
+  background-color: rgb(40 139 175 / 79%);
+  font-family: "Bad Script", cursive;
+  font-size: 125px;
+  line-height: 80px;
+  font-weight: 300;
+  text-decoration: underline;
+  text-align: center;
+}
+#Banner {
+  width: 100%;
+  background-image: url("Images/Frontpage-JRP.jpg");
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+}
 h3 {
   text-decoration: underline cornflowerblue;
 }
@@ -254,7 +272,7 @@ button:hover {
   padding: 12px;
 }
 /* Connect buttons*/
-#connect {
+#connect #pdf {
   background-color: transparent;
   color: rgb(167, 0, 227);
   border: 2px solid rgb(111, 0, 255);
@@ -264,7 +282,7 @@ button:hover {
   margin: 10px;
   padding: 12px;
 }
-#connect:hover {
+#connect #pdf:hover {
   color: rgb(167, 0, 227);
   transition: all 0.3s ease-in-out 0s;
   background-color: rgba(138, 150, 221, 0.639);
@@ -295,10 +313,6 @@ footer {
   background-color: hsla(259, 71%, 41%, 0.333);
 }
 
-@media only screen and (min-width: 970px) {
-  /* .hero-text {
-    width: 50px; */
-}
 .square {
   width: 48%;
   margin: 1%;
