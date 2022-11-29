@@ -6,13 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Source+Sans+3:ital,wght@0,300;1,300;1,900&display=swap");
 /* ~Ruda~ */
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap");
-* {
-  margin: 0px;
-  padding: 0px;
-}
 
 body {
-  transition: 0.3s;
+  transition: 0.1s;
   margin: 0;
   padding: 0;
   background: radial-gradient(
@@ -22,6 +18,7 @@ body {
   );
   font-family: "Source Sans 3", sans-serif;
 }
+/*Journey page Headshot*/
 .Headshot {
   display: block;
   margin: 0px 50px 0px 50px;
@@ -29,7 +26,7 @@ body {
   height: 330px;
   border-radius: 200px;
 }
-
+/*h1 overall CSS*/
 h1 {
   margin-block-start: auto;
   font-size: 80px;
@@ -39,12 +36,11 @@ h1 {
   text-decoration: underline;
   margin: 40px 0 40px 0;
 }
-
+/*Home Page*/
 #frontpage {
   color: #ffd000;
   background-color: rgb(40 139 175 / 79%);
   font-family: "Bad Script", cursive;
-  font-size: 125px;
   line-height: 80px;
   font-weight: 300;
   text-decoration: underline;
@@ -54,14 +50,16 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*Banner image*/
 #Banner {
-  width: 100%;
   background-image: url("Images/Frontpage-JRP.jpg");
+  background-size: cover;
+  padding: 50px 30px;
+  text-align: center;
   height: 800px;
   background-position: center;
-  background-size: cover;
-  position: relative;
 }
+
 h3 {
   text-decoration: underline cornflowerblue;
 }
@@ -82,13 +80,14 @@ a {
   text-decoration: none;
   font-weight: 400;
 }
+/*Dark mode function*/
 .dark a {
   color: #ffd900;
 }
 .dark button {
-  background-color: #4e4376;
+  background-color: #483495;
 }
-
+/*Navigation and Header for all of project*/
 header {
   display: flex;
   justify-content: space-between;
@@ -114,9 +113,8 @@ header {
   color: rgb(167, 0, 227);
   border: 2px solid rgb(111, 0, 255);
   box-shadow: 3px 3px 3px rgb(143, 201, 222), 3px 3px 3px rgb(220, 217, 249);
-  border-radius: 8px;
-  margin: 10px;
-  padding: 12px;
+  border-radius: 10px;
+  position: -webkit-sticky;
 }
 /*Quote and connect button*/
 
@@ -168,64 +166,9 @@ header {
 .dark > * {
   color: white;
 }
-/*Carousel slide show*/
-.carousel-container {
-  width: 60%;
-  margin: auto;
-  border: 5px solid purple;
-  overflow: hidden;
-  position: relative;
-}
+/*Journey Cards*/
 
-.carousel-slide {
-  display: flex;
-  width: 100%;
-  height: 500px;
-}
-
-#prevbtn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  left: 5%;
-  font-size: 30px;
-  color: #ffff00ba;
-  opacity: 0.5;
-  cursor: pointer;
-}
-#nextbtn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  right: 5%;
-  font-size: 30px;
-  color: #ffd000ba;
-  opacity: 0.5;
-  cursor: pointer;
-}
-/*Project squares*/
-.hero-main {
-  height: 15vh;
-}
-.hero-text {
-  width: auto;
-  height: auto;
-  margin-right: 10px;
-  padding: 30px;
-}
-
-.square {
-  width: 50%;
-  margin: 1%;
-  height: 200px;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.dark .square {
-  background-color: #7e6bc6;
-}
-
+/*Project images*/
 #egg {
   background-image: url("Images/girlyEgg.jpg");
   background-size: cover;
@@ -268,35 +211,11 @@ button {
 }
 button:hover {
   color: rgb(167, 0, 227);
-  transition: all 0.3s ease-in-out 0s;
-  background-color: transparent;
+  background-color: hsla(259, 71%, 41%, 0.333);
   border: 2px solid rgb(111, 0, 255);
   box-shadow: 3px 3px 3px rgb(143, 201, 222), 3px 3px 3px rgb(220, 217, 249);
-  border-radius: 8px;
-  margin: 10px;
-  padding: 12px;
-}
-/* Connect buttons*/
-#connect #pdf {
-  background-color: transparent;
-  color: rgb(167, 0, 227);
-  border: 2px solid rgb(111, 0, 255);
-  box-shadow: 3px 3px 3px hsla(196, 54%, 72%, 0.716),
-    3px 3px 3px rgb(220, 217, 249);
-  border-radius: 8px;
-  margin: 10px;
-  padding: 12px;
-}
-#connect #pdf:hover {
-  color: rgb(167, 0, 227);
-  transition: all 0.3s ease-in-out 0s;
-  background-color: rgba(138, 150, 221, 0.639);
-  border: 2px solid rgb(111, 0, 255);
-  box-shadow: 3px 3px 3px hsla(196, 54%, 72%, 0.702),
-    3px 3px 3px rgb(220, 217, 249);
-  border-radius: 8px;
-  margin: 10px;
-  padding: 12px;
+  border-radius: 10px;
+  position: -webkit-sticky;
 }
 /* Dark mode button effect*/
 .button:active {
@@ -310,8 +229,8 @@ button:hover {
 
 footer {
   display: grid;
-  row-gap: 10px;
-  padding: 100px 30px;
+  row-gap: 5px;
+  padding: 50px 30px;
   background-color: hsla(256, 65%, 63%, 0.421);
 }
 .dark footer {
