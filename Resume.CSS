@@ -36,6 +36,9 @@ h1 {
   text-decoration: underline;
   margin: 40px 0 40px 0;
 }
+#construction {
+  color: orangered;
+}
 /*Home Page*/
 #frontpage {
   color: #ffd000;
@@ -54,6 +57,7 @@ h1 {
 #Banner {
   background-image: url("Images/Frontpage-JRP.jpg");
   background-size: cover;
+  background-position: center;
   padding: 50px 30px;
   text-align: center;
   height: 800px;
@@ -231,6 +235,7 @@ footer {
   display: grid;
   row-gap: 5px;
   padding: 50px 30px;
+  margin: 0px;
   background-color: hsla(256, 65%, 63%, 0.421);
 }
 .dark footer {
