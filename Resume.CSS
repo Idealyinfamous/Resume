@@ -39,17 +39,13 @@ h1 {
 #construction {
   color: orangered;
 }
-/*Home Page*/
+/*Home Page text */
 #frontpage {
   color: #ffd000;
   background-color: rgb(40 139 175 / 79%);
-  font-family: "Bad Script", cursive;
-  line-height: 80px;
-  font-weight: 300;
-  text-decoration: underline;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -57,11 +53,11 @@ h1 {
 #Banner {
   background-image: url("Images/Frontpage-JRP.jpg");
   background-size: cover;
+  background-attachment: scroll;
   background-position: center;
   padding: 50px 30px;
   text-align: center;
   height: 800px;
-  background-position: center;
 }
 
 h3 {
@@ -250,4 +246,14 @@ footer {
   color: rgb(252, 158, 8);
   font-weight: bolder;
   font-family: "Ruda", sans-serif;
+}
+@media screen and (min-width: 800px) {
+  #Banner {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  #Banner {
+    top: 25%;
+  }
 }
