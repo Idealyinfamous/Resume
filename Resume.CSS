@@ -252,8 +252,3 @@ footer {
     white-space: nowrap;
   }
 }
-@media screen and (max-width: 750px) {
-  #Banner {
-    top: 25%;
-  }
-}
