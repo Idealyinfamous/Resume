@@ -71,15 +71,33 @@ h2 {
   margin: 50px 0 10px 0;
 }
 p {
-  margin: 0;
   font-size: 20px;
 }
+
 a {
   color: rgb(220, 47, 255);
   font-size: 20px;
   text-decoration: none;
   font-weight: 400;
 }
+/*Summary
+main {
+  color: orangered;
+  text-align: center;
+}
+div {
+  display: grid;
+}
+.Aboutme {
+  justify-content: right;
+}
+img.Chef {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}*/
+
 /*Dark mode function*/
 .dark a {
   color: #ffd900;
@@ -200,6 +218,9 @@ header {
   color: #2b5876;
   background: rgb(171, 116, 199);
 }
+.description {
+  margin: 0;
+}
 /* General buttons*/
 button {
   background-color: #92d9fa;
@@ -244,7 +265,6 @@ footer {
   height: 600px;
   border-radius: 40px;
   color: rgb(252, 158, 8);
-  font-weight: bolder;
   font-family: "Ruda", sans-serif;
 }
 @media screen and (min-width: 800px) {
