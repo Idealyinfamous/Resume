@@ -80,23 +80,34 @@ a {
   text-decoration: none;
   font-weight: 400;
 }
-/*Summary
-main {
-  color: orangered;
+/*Summary*/
+.Journey {
+  color: rgb(34, 0, 255);
   text-align: center;
-}
-div {
-  display: grid;
+  background-color: #a980c3;
+  border-radius: 25px;
+  padding: 20px;
 }
 .Aboutme {
   justify-content: right;
+  text-decoration: underline;
+  color: #483495;
+  font-weight: bold;
 }
+.Summary p {
+  display: inline-block;
+
+  text-decoration: none;
+}
+
 img.Chef {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
-}*/
+  height: 50%;
+  border-radius: 15px;
+  box-shadow: 3px 8px 8px 5px #dcc7e8;
+}
 
 /*Dark mode function*/
 .dark a {
@@ -104,6 +115,10 @@ img.Chef {
 }
 .dark button {
   background-color: #483495;
+}
+.dark .Chef {
+  border-radius: 15px;
+  box-shadow: 3px 8px 8px 5px rgb(84, 116, 126);
 }
 /*Navigation and Header for all of project*/
 header {
@@ -251,7 +266,7 @@ button:hover {
 footer {
   display: grid;
   row-gap: 5px;
-  padding: 50px 30px;
+  padding: 36px 10px;
   margin: 0px;
   background-color: hsla(256, 65%, 63%, 0.421);
 }
