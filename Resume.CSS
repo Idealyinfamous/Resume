@@ -69,6 +69,7 @@ h2 {
   line-height: 40px;
   font-weight: 300;
   margin: 50px 0 10px 0;
+  text-align: center;
 }
 p {
   font-size: 20px;
@@ -234,7 +235,14 @@ header {
   background: rgb(171, 116, 199);
 }
 .description {
+  text-align: center;
   margin: 0;
+}
+.projectbuttons {
+  margin-top: 39%;
+  margin-bottom: 10%;
+  margin-left: 44%;
+  margin-right: 50%;
 }
 /* General buttons*/
 button {
