@@ -1,37 +1,43 @@
-# _{Application Name}_
+# Jessica Perry : Web Developer & Chef
 
-#### By _**{List of contributors}**_
+#### By Jessica Perry
 
-#### _{Brief description of application}_
+#### Photography; Chanel Faaoso
+
+#### Webpage journey from Culinary profession to self-taught Tech professional.
+
+[Github Pages: Click Here](https://idealyinfamous.github.io/Resume/)
+
+## Showcasing learning Paths:
+
+- Shecodes Basic Workshop
+- GenerationUSA Web Development program
+- Coursera IT Professional Courses
+- Treehouse Front-end Developer Tracks
 
 ## Technologies Used
 
-- _List all_
-- _the major technologies_
-- _you used in your project_
-- _here_
+- HTML & CSS
+- Javascript
+- Chatgpt(content assitance)
+- Google Fonts
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+### This project showcases three sections.
 
-## Setup/Installation Requirements
+1. Main Title page
+2. Journey page
+3. Projects Page.
 
-- _This is a great place_
-- _to list setup instructions_
-- _in a simple_
-- _easy-to-understand_
-- _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+###
 
 ## Known Bugs
 
-- _Any known issues_
-- _should go here_
+- Styling issues. Webpage is not reponsive to some devices.
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns. Encourage them to contact you or make a contribution to the code.}_
+MIT
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c)6/8/23 JPerry/Idealyinfamous
